@@ -1,0 +1,11 @@
+.order {
+  color: rgb(227, 216, 216);
+  text-align: center;
+  background: #470707;
+}
+.totalbill {
+  text-align: left;
+}
+.totalitems {
+  text-align: center;
+}

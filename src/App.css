@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
-}
+.body {
+  background: url("https://media.istockphoto.com/id/1393266493/photo/fried-eggs-and-bacon.webp?b=1&s=170667a&w=0&k=20&c=JZlXFQB69NUfUjpNl1NeJRO3GD1sH88DUT4lI1t24rA=")
+    50%;
+  height: 100vh;
+  width: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0;
+  /* text-align: center; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line {
+  height: 10px;
 }

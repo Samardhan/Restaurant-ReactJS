@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import FoodCart from "./Components/FoodCart/FoodCart";
+import Navbar from "./Components/Navbar/navbar";
+import Home from "./Components/indexDescp/home";
+import FoodMenu from "./Components/FoodMenu/Foodmenu";
+import Book from "./Components/Booktable/Booktable";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="body">
+        <div className="App">
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/book" element={<Book />} />
+              <Route exact path="/menu" element={<FoodMenu />} />
+              <Route exact path="cart" element={<FoodCart />} />
+            </Routes>
+          </Router>
+        </div>
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,20 @@
+.bucket {
+  width: 20px;
+  height: 20px;
+}
+.title {
+  text-align: center;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.cart {
+  color: black;
+  font-size: large;
+}
+.navele {
+  font-size: x-large;
+}
+.brtag {
+  width: auto;
+  color: red;
+}
