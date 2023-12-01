@@ -8,7 +8,7 @@ import FoodCart from "./Components/FoodCart/FoodCart";
 import Navbar from "./Components/Navbar/navbar";
 import Home from "./Components/indexDescp/home";
 import FoodMenu from "./Components/FoodMenu/Foodmenu";
-import Book from "./Components/Booktable/Booktable";
+import Add from "./Components/AddItem/AddItem.jsx";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route exact path="/" element={<Home />} />
-              <Route exact path="/book" element={<Book />} />
+              <Route exact path="/add" element={<Add />} />
               <Route exact path="/menu" element={<FoodMenu />} />
               <Route exact path="cart" element={<FoodCart />} />
             </Routes>

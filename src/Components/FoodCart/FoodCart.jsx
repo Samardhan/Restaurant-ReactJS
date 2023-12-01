@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./FoodCart.css";
-import { get } from "../Services/url";
+import { urllink } from "../Services/url";
 
 const FoodCart = () => {
   let [Food, setFood] = useState([]);
 
   useEffect(() => {
     console.log("fetched");
-    get("getFood", {}).then(
+    urllink("getFood", {}).then(
       (res) => setFood(res)
       // window.alert("Data not Found")
     );

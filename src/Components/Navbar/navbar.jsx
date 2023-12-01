@@ -14,7 +14,7 @@ let Navbar = () => {
           <Link className="nav-link mx-3" to="/menu">
             Menu
           </Link>
-          <Link className="nav-link mx-3" to="/book">
+          <Link className="nav-link mx-3" to="/">
             Book-Table
           </Link>
         </div>
@@ -33,29 +33,30 @@ let Navbar = () => {
             <i class="bi bi-person-circle"></i>
           </Link>
         </form>
-        <div className="navryt">
-          <form
-            className="cart d-flex justify-content-right me-3 btn btn-secondary text-white"
-            role="search"
-          >
-            <Link className="nav-link mx-3 bg-none" to="/book">
-              Add-Items
-            </Link>
-          </form>
-          <form
-            className="cart d-flex justify-content-right me-3 btn btn-secondary text-white"
-            role="search"
-          >
-            <Link class="nav-link " to="/cart">
-              <span>
-                {" "}
-                <i class="bi bi-basket3 bucket me-2"></i>Cart
-              </span>
-            </Link>
-          </form>
-        </div>
+
+        <form
+          className="cart d-flex justify-content-right me-3 btn btn-secondary text-white"
+          role="search"
+        >
+          <Link className="nav-link mx-3 bg-none" to="/add">
+            Add-Items
+          </Link>
+        </form>
+        <form
+          className="cart d-flex justify-content-right me-3 btn btn-secondary text-white"
+          role="search"
+        >
+          <Link class="nav-link " to="/cart">
+            <span>
+              {" "}
+              <i class="bi bi-basket3 bucket me-2"></i>Cart
+            </span>
+          </Link>
+        </form>
       </nav>
-      <div className=" line bg-dark ">-</div>
+      <div className=" line bg-dark ">
+        <br />
+      </div>
     </>
   );
 };
